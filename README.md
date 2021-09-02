@@ -1,13 +1,13 @@
-#HealthCare Web Page Project
+# HealthCare Web Page Project
 
-##Contributors
+## Contributors
 <p>&nbsp;</p>
-*Shahid Yousafxai
-*Muhammad Zubair 
-*Aqib Awan
-*Umair Zafar
+* Shahid Yousafxai
+* Muhammad Zubair 
+* Aqib Awan
+* Umair Zafar
 <p>&nbsp;</p>
-##Link
+## Link
 
 
 
