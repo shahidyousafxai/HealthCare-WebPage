@@ -1,0 +1,326 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+:root{
+    --wood:#f2bc4c;
+    --text: rgb(253, 144, 81);
+    --sky: rgb(6, 161, 223);
+}
+/*############  NAVBAR  ###########*/
+body .navbar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: 999999;
+    box-shadow: 0 5px 10px rgba(180, 180, 180, 0.945);
+}
+.nav{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+}
+.logo{
+    margin-left: 100px;
+    font-size: 1.8em;
+    font-weight: 700;
+}
+.menu{
+    display: flex;
+    list-style-type: none;
+    margin-right: 100px;
+}
+.menu a{
+    margin-right: 25px;
+}
+.Cupdate{
+    color: var(--text);
+}
+/*############  PENDAMIC  ###########*/
+.pendamic{
+    display: flex;
+    justify-content: space-around;
+}
+.left-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.p1{
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.safe{
+    font-size: 30px;
+}
+.p2{
+    color: rgb(146, 146, 146);
+    margin-bottom: 30px;
+}
+.left-div a{
+    width: 150px;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: rgb(3, 150, 241);
+    color: white;
+}
+
+/*############  ARTICLE  ###########*/
+.article{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+.img{
+    display: flex;
+    margin-left: 70px;
+}
+.points{
+    width: 55%;
+    font-size: 1em;
+    margin-top: 50px;
+    margin-right: 70px;
+}
+.points p{
+    margin: 0 0 55px 20px;
+    line-height: 35px;
+}
+.p{
+    display: flex;
+}
+.count{
+    font-size: 1.8em;
+    margin-left: 30px;
+}
+.stay{
+    font-size: 1.2em;
+    color: var(--sky)
+}
+
+/*############  CARDS  ###########*/
+.head{
+    text-align: center;
+    font-size: 2rem;
+    margin: 20px 0 50px 0;
+    word-spacing: 3px;
+}
+span{
+    color: var(--text);
+}
+.main{
+    display: grid;
+    grid-template-columns: repeat(3, 28%);
+    justify-content: space-around;
+    grid-gap: 20px;
+    
+}
+.card{
+    border-radius: 5px;
+    box-shadow: 2px 8px 15px rgb(161, 160, 160);
+    height: 350px;
+}
+.color{
+    background-color: var(--wood);
+    height: 130px;
+    border-radius: 5px 5px 0 0;
+}
+.color-blue{
+    background-color: var(--sky);
+    height: 130px;
+    border-radius: 5px 5px 0 0;
+}
+.card h2{
+    margin: 25px 0 25px 20px;
+}
+.card p{
+    margin: 25px 0 10px 20px;
+    line-height: 35px;
+    font-size: 0.9em;
+    color: rgb(146, 145, 145);
+}
+.card img{
+    position: relative;
+    top: 10px;
+    left: 300px;
+    background-color: lightgrey;
+    padding: 8px;
+    border-radius: 3px;
+}
+
+/*##############  FOOTER  ###############*/
+#container {
+    width: 100%;
+    height: 100%;
+    background-color: var(--wood);
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.content{
+    margin-left: 100px;
+}
+.content img{
+    border-radius: 8px ;
+    margin: 40px 30px 0  0;
+}
+.title{
+    font-size: 2rem;
+}
+.subtitle{
+    font-size: 20px;
+    font-weight: 500;
+}
+.get{
+    color: white;
+    font-size: 15px;
+}
+.second{
+    width: 30vw;
+    height: 70vh;
+    grid-area: p ;
+    place-content: center;
+    display: grid;
+    background-color: #f2bc4c;
+    image-rendering: crisp-edges;
+}
+.second img{
+   height: 50vh;
+   width: 25vw;
+   object-fit: contain;
+}
+#footer{
+    height: 25vh;
+    text-align: center;
+    background-color: white;
+}
+.titles{
+    font-size: 2rem;
+    line-height: 50px;
+    margin-top: 50px;
+}
+.navi{
+    justify-content: space-around;
+    word-spacing:2em;
+    letter-spacing: 1px;
+    margin: 40px;
+}
+.colors{
+    color: red;
+}
+a{
+    color: black;
+    font-size: 19px;
+    text-decoration: none;
+}
+/*##################     MEDIA QUERIES    ###################*/
+@media screen and (max-width: 525px) {
+    .navbar{
+        background-color: white;
+        z-index: 99;
+        box-shadow: 0 5px 10px rgba(180, 180, 180, 0.945);
+    }
+    .nav{
+        width: 100%;
+        height: 100px;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .menu{
+        margin: 0 auto;
+    }
+    .logo-div{
+        margin-bottom: 15px;
+    }
+    .logo{
+    margin-left: 50px;
+    }
+    .pendamic{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .left-div p{
+        text-align: center;
+    }
+    .left-div a{
+        margin: 0 auto;
+    }
+    .article{
+        flex-direction: column;
+        justify-content: space-around;
+        margin-bottom: 100px;
+        margin-top: 100px;
+    }
+    .points{
+        font-size: 1em;
+        margin-top: 50px;
+        margin-right: 70px;
+    }
+    .points .p{
+        width: 450px;
+        padding: 20px 20 30px 20px;
+    }
+    .img{
+        margin: 0;
+        justify-content: center;
+    }
+    .question{
+        display: flex;
+        align-items: center;
+    }
+
+    .img-div img{
+        width: 150px;
+        height: auto;
+    }
+    .points p{
+        margin: 0 0 30px 20px;
+        line-height: 25px;
+    }
+    .main{
+        grid-template-columns: repeat(1, 80%);  
+        row-gap: 50px;
+    }
+    #container {
+        flex-direction: column-reverse;
+    }
+    .second{
+        width: 200px;
+        height: 300px;
+    }
+    .second img{
+        height: 300px;
+        width: 300px;
+        object-fit: contain;
+     }
+     .content{
+        margin: 40px;
+
+    }
+     .title{
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    .subtitle{
+        font-size: 1em;
+        text-align: center;
+    }
+    .content img{
+       margin-left:20px;
+    }
+    .navi{
+        margin: 20px 10px;
+    }
+    .navi a{
+        font-size: 1em;
+    }
+  }
